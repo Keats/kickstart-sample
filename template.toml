@@ -1,19 +1,28 @@
-[bin_name]
-default = "Bin"
-question = "Binary name?"
+name = "Basic CLI"
+kickstart_version = 1
 
-[description]
+[[variables]]
+name = "bin_name"
+default = "bin"
+prompt = "Binary name?"
+
+[[variables]]
+name = "description"
 default = "Some CLI app"
-question = "A description for that binary?"
+prompt = "A description for that binary?"
 
-[author_name]
-default = "Vincent"
-question = "Your name?"
+[[variables]]
+name = "author_name"
+default = "Ann O'Nyme"
+prompt = "Your name?"
 
-[author_mail]
+[[variables]]
+name = "author_mail"
 default = "spam@spam.com"
-question = "Your email?"
+prompt = "Your email?"
 
-[use_clap]
+[[variables]]
+name = "use_clap"
 default = true
-question = "Do you want clap set-up?"
+prompt = "Do you want to setup clap?"
+
